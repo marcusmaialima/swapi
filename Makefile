@@ -1,6 +1,7 @@
 
 install:
 	pip install -r requirements.txt
+	pip install --upgrade setuptools
 
 build:
 	python manage.py migrate

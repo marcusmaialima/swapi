@@ -8,9 +8,9 @@ SECRET_KEY = os.environ.get(
     'i+acxn5(akgsn!sr4^qgf(^m&*@+g1@u^t@=8s@axc41ml*f=s'
 )
 
-DEBUG = bool(os.environ.get('DEBUG', False))
+DEBUG = bool(os.environ.get('DEBUG', 0))
 # Because test settings will trigger KEEN.io hits
-KEEN_DEBUG = bool(os.environ.get('DEBUG', False))
+KEEN_DEBUG = bool(os.environ.get('DEBUG', True))
 
 TEMPLATE_DEBUG = DEBUG
 
